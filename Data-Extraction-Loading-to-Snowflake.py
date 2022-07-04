@@ -105,7 +105,7 @@ connection = engine.connect()
 # print(row[0])
 
 try:
-    final_data.to_sql('{TABLE NAME WHERE YOU'LL HOST YOUR DATA}', con=engine, index=False, if_exists='append')
+    final_data.to_sql('{TABLE NAME WHERE YOU'LL HOST YOUR DATA}', con=connection, index=False, if_exists='append')
 
 except Exception as e:
     print(e)
